@@ -28,41 +28,8 @@ import {
 } from 'lucide-react';
 import { skillCategories } from '../data/portfolioData';
 
-type SkillItem = {
-  name: string;
-  icon?: string;
-};
-
-const skillImageModules = import.meta.glob('../data/images/*.{png,jpg,jpeg,svg,webp}', {
-  eager: true,
-  import: 'default',
-}) as Record<string, string>;
-
-const skillImageByFileName = Object.fromEntries(
-  Object.entries(skillImageModules).map(([path, url]) => [
-    path.split('/').pop() ?? path,
-    url,
-  ])
-);
-
 // Helper icon mapper for skill logos
-const getSkillIcon = (skill: SkillItem) => {
-  if (skill.icon) {
-    const customImage =
-      skillImageByFileName[skill.icon] ||
-      skillImageByFileName[skill.icon.replace(/^.*\//, '')];
-
-    if (customImage) {
-      return (
-        <img
-          src={customImage}
-          alt={skill.name}
-          className="w-5 h-5 object-contain"
-        />
-      );
-    }
-  }
-
+const getSkillIcon = (name: string) => {
   const iconMap: Record<string, React.ReactNode> = {
     'JavaScript': <Code2 className="w-5 h-5 text-amber-400" />,
     'PHP': <Server className="w-5 h-5 text-indigo-400" />,
@@ -90,7 +57,7 @@ const getSkillIcon = (skill: SkillItem) => {
     'Power BI': <PieChart className="w-5 h-5 text-yellow-400" />,
   };
 
-  return iconMap[skill.name] || <Code className="w-5 h-5 text-[#00C8FF]" />;
+  return iconMap[name] || <Code className="w-5 h-5 text-[#00C8FF]" />;
 };
 
 export const Skills: React.FC = () => {
@@ -143,7 +110,7 @@ export const Skills: React.FC = () => {
                     className="flex items-center gap-3 p-3 rounded-2xl bg-zinc-900/80 light:bg-slate-50 border border-zinc-800/80 light:border-slate-200/90 hover:border-[#00C8FF]/70 light:hover:border-sky-400 hover:bg-[#00C8FF]/10 light:hover:bg-sky-50 hover:shadow-[0_0_18px_rgba(0,200,255,0.2)] transition-all cursor-pointer group/card"
                   >
                     <div className="w-9 h-9 rounded-xl bg-black/40 light:bg-white border border-zinc-800 light:border-slate-200 flex items-center justify-center shrink-0 group-hover/card:scale-110 transition-transform shadow-inner">
-                      {getSkillIcon(skill)}
+                      {getSkillIcon(skill.name)}
                     </div>
                     <span className="text-xs font-semibold text-zinc-200 light:text-slate-800 group-hover/card:text-white light:group-hover/card:text-slate-900 truncate">
                       {skill.name}
