@@ -10,7 +10,7 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
-  const [visibleCount, setVisibleCount] = useState<number>(2);
+  const [visibleCount, setVisibleCount] = useState<number>(3);
 
   const categories = ['All', 'Web Platforms', 'Mobile Applications', 'AI & ML', 'Data Science & Analytics'];
 
@@ -23,14 +23,14 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
-    setVisibleCount(2); // Reset to initial 2 projects when changing category
+    setVisibleCount(3); // Reset to initial 2 projects when changing category
   };
 
   const handleToggleLoadMore = () => {
     if (hasMore) {
       setVisibleCount(filteredProjects.length);
     } else {
-      setVisibleCount(2);
+      setVisibleCount(3);
     }
   };
 
@@ -67,7 +67,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
       </div>
 
       {/* 2-Column Interactive Grid */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <AnimatePresence>
           {displayedProjects.map((project, idx) => (
             <motion.div
@@ -76,7 +76,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.9 }}
-              transition={{ duration: 0.5, delay: idx * 0.08 }}
+              transition={{ duration: 0.5, delay: idx * 0.01 }}
               onClick={() => onSelectProject(project)}
               className="group bg-[#121214] light:bg-white border border-[#27272A] light:border-slate-200 rounded-3xl overflow-hidden shadow-xl transition-all duration-300 hover:border-[#00C8FF] hover:shadow-[0_0_30px_rgba(0,200,255,0.2)] cursor-pointer flex flex-col justify-between"
             >
@@ -89,7 +89,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#121214] light:from-white via-[#121214]/40 to-transparent opacity-80" />
+                  <div className="absolute inset-0  from-[#121214] light:from-white via-[#121214]/40 to-transparent opacity-80" />
 
                   {/* Top Category Badge */}
                   <div className="absolute top-4 left-4 inline-flex items-center gap-1 px-3 py-1 rounded-full bg-black/70 backdrop-blur-md text-[#00C8FF] text-[11px] font-mono border border-[#00C8FF]/30">
@@ -141,7 +141,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
       </motion.div>
 
       {/* Load More / Show Less Button */}
-      {filteredProjects.length > 2 && (
+      {filteredProjects.length > 3 && (
         <div className="mt-12 flex justify-center">
           <motion.button
             whileHover={{ scale: 1.05 }}

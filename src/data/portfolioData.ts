@@ -125,7 +125,11 @@ export const projectsData: Project[] = [
       "Gamified learning paths for modern agriculture",
       "Optimized 3D render performance on mobile devices"
     ],
-    image: "https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Sacar.jpg",
+    images: ["/src/data/images/Sacar.jpg", 
+            "/src/data/images/Sacar.jpg", 
+            "/src/data/images/Sacar.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/airbnb-price-prediction"
   },
   {
     id: "proj-2",
@@ -144,7 +148,11 @@ export const projectsData: Project[] = [
       "Real-time webcam pose landmark detection",
       "Low-latency Flask bridge for browser game inputs"
     ],
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Subway Surfers.jpg",
+    images: ["/src/data/images/Sacar.jpg", 
+            "/src/data/images/Subway Surfers.jpg", 
+            "/src/data/images/Subway Surfers.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/subway-surfers-pose-detection"
   },
   {
     id: "proj-3",
@@ -163,7 +171,12 @@ export const projectsData: Project[] = [
       "Feature engineering for experience, remote work, & location",
       "Random Forest Regressor with tuned hyper-parameters"
     ],
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Sacar.jpg",
+    images: ["/src/data/images/Data_Science_Salary_Prediction_1.jpg",
+      "/src/data/images/Data_Science_Salary_Prediction_2.jpg",
+      "/src/data/images/Data_Science_Salary_Prediction_3.jpg"
+    ],
+    githubUrl: "https://github.com/ferizwan-malik/data-science-salary-prediction"
   },
   {
     id: "proj-4",
@@ -182,7 +195,9 @@ export const projectsData: Project[] = [
       "Large-scale distributed data processing via Spark",
       "Power BI executive dashboard reporting"
     ],
-    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Airbnb.jpg",
+    images: ["/src/data/images/Airbnb_1.jpg", "/src/data/images/Airbnb_2.jpg", "/src/data/images/Airbnb_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/airbnb-price-prediction"
   },
   {
     id: "proj-5",
@@ -200,7 +215,9 @@ export const projectsData: Project[] = [
       "Machine learning-based delay prediction",
       "Distributed data processing with Apache Spark"
     ],
-    image: "https://images.unsplash.com/photo-1556742049-0a670f4a4591?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Flight_Delay_Prediction.jpg",
+    images: ["/src/data/images/Flight_Delay_Prediction_1.jpg", "/src/data/images/Flight_Delay_Prediction_2.jpg", "/src/data/images/Flight_Delay_Prediction_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/flight-delay-prediction"
   },
   {
     id: "proj-6",
@@ -218,7 +235,9 @@ export const projectsData: Project[] = [
       "Full admin order & inventory management dashboard",
       "Integrated payment and order management"
     ],
-    image: "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Abon_Murnisaji.jpg",
+    images: ["/src/data/images/Abon_Murnisaji_1.jpg", "/src/data/images/Abon_Murnisaji_2.jpg", "/src/data/images/Abon_Murnisaji_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/abon-murnisaji"
   },
   {
     id: "proj-7",
@@ -236,7 +255,9 @@ export const projectsData: Project[] = [
       "Real-time schedule availability",
       "Automated booking confirmation and receipts"
     ],
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Puncak_Tennis_Club.jpg",
+    images: ["/src/data/images/Puncak_Tennis_Club_1.jpg", "/src/data/images/Puncak_Tennis_Club_2.jpg", "/src/data/images/Puncak_Tennis_Club_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/puncak-tennis-club"
   },
   {
     id: "proj-8",
@@ -254,7 +275,9 @@ export const projectsData: Project[] = [
       "Manual CLAHE implementation without external computer vision libraries",
       "Real-time browser-based image processing with Canvas API"
     ],
-    image: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/CCTV_Image_Enhancement.jpg",
+    images: ["/src/data/images/CCTV_Image_Enhancement_1.jpg", "/src/data/images/CCTV_Image_Enhancement_2.jpg", "/src/data/images/CCTV_Image_Enhancement_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/cctv-image-enhancement"
   },
   {
     id: "proj-9",
@@ -272,7 +295,9 @@ export const projectsData: Project[] = [
       "Shopping cart and order management",
       "Optimized purchasing workflow"
     ],
-    image: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Nasi_Kebuli_Mutiara.jpg",
+    images: ["/src/data/images/Nasi_Kebuli_Mutiara_1.jpg", "/src/data/images/Nasi_Kebuli_Mutiara_2.jpg", "/src/data/images/Nasi_Kebuli_Mutiara_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/nasi-kebuli-mutiara"
   },
   {
     id: "proj-10",
@@ -290,7 +315,9 @@ export const projectsData: Project[] = [
       "Digital marketplace for betta fish",
       "Educational content management"
     ],
-    image: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Bettabeal.jpg",
+    images: ["/src/data/images/Bettabeal_1.jpg", "/src/data/images/Bettabeal_2.jpg", "/src/data/images/Bettabeal_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/bettabeal"
   },
   {
     id: "proj-11",
@@ -306,7 +333,9 @@ export const projectsData: Project[] = [
       "Responsive multi-device experience",
       "Website performance optimization"
     ],
-    image: "https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?auto=format&fit=crop&w=1000&q=80"
+    image: "/src/data/images/Sate_Umami.jpg",
+    images: ["/src/data/images/Sate_Umami_1.jpg", "/src/data/images/Sate_Umami_2.jpg", "/src/data/images/Sate_Umami_3.jpg"],
+    githubUrl: "https://github.com/ferizwan-malik/sate-umami"
   }
 ];
 

@@ -128,7 +128,7 @@ export default function App() {
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6 }}
             >
-              <Skills />
+              <Skills /> 
             </motion.div>
 
             <motion.div

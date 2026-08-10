@@ -33,8 +33,9 @@ export interface Project {
   technologies: string[];
   highlights: string[];
   image: string;
+  images: string[];
   demoUrl?: string;
-  githubUrl?: string;
+  githubUrl: string;
   featured?: boolean;
 }
 
