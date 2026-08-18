@@ -364,7 +364,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2.5 rounded-xl bg-zinc-800 light:bg-slate-200 text-xs font-semibold text-white light:text-slate-800 flex items-center gap-2 hover:bg-zinc-700 transition-colors"
+                className="px-4 py-2.5 rounded-xl bg-zinc-800 light:bg-slate-200 text-xs font-semibold text-white light:text-slate-800 flex items-center gap-2 hover:bg-[#00C8FF] transition-colors"
               >
                 {/* <Github className="w-4 h-4" /> */}
                 <span>View Source</span>

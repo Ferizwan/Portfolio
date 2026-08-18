@@ -126,10 +126,11 @@ export const projectsData: Project[] = [
       "Optimized 3D render performance on mobile devices"
     ],
     image: "/src/data/images/Sacar.jpg",
-    images: ["/src/data/images/Sacar.jpg", 
-            "/src/data/images/Sacar.jpg", 
-            "/src/data/images/Sacar.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/airbnb-price-prediction"
+    images: ["/src/data/images/Sacar.jpg",
+            "/src/data/images/Sacar1.jpg", 
+            "/src/data/images/Sacar2.jpg", 
+            "/src/data/images/Sacar3.jpg"],
+    githubUrl: "https://drive.google.com/drive/folders/1aGIjfxdtIoPsGqbxateXGeHVH06R_iWl?usp=sharing"
   },
   {
     id: "proj-2",
@@ -148,10 +149,10 @@ export const projectsData: Project[] = [
       "Real-time webcam pose landmark detection",
       "Low-latency Flask bridge for browser game inputs"
     ],
-    image: "/src/data/images/Subway Surfers.jpg",
-    images: ["/src/data/images/Sacar.jpg", 
-            "/src/data/images/Subway Surfers.jpg", 
-            "/src/data/images/Subway Surfers.jpg"],
+    image: "/src/data/images/SubwaySurfers.jpg",
+    images: ["/src/data/images/SubwaySurfers.jpg", 
+            "/src/data/images/SubwaySurfers1.jpg", 
+            "/src/data/images/SubwaySurfers2.jpg"],
     githubUrl: "https://github.com/ferizwan-malik/subway-surfers-pose-detection"
   },
   {
@@ -171,12 +172,10 @@ export const projectsData: Project[] = [
       "Feature engineering for experience, remote work, & location",
       "Random Forest Regressor with tuned hyper-parameters"
     ],
-    image: "/src/data/images/Sacar.jpg",
-    images: ["/src/data/images/Data_Science_Salary_Prediction_1.jpg",
-      "/src/data/images/Data_Science_Salary_Prediction_2.jpg",
-      "/src/data/images/Data_Science_Salary_Prediction_3.jpg"
+    image: "/src/data/images/Salary.jpg",
+    images: ["/src/data/images/Salary.jpg"
     ],
-    githubUrl: "https://github.com/ferizwan-malik/data-science-salary-prediction"
+    githubUrl: "https://colab.research.google.com/drive/1czaCjfU1fxoEF7W64vEY00zAZEoeb01L?usp=sharing"
   },
   {
     id: "proj-4",
@@ -196,29 +195,31 @@ export const projectsData: Project[] = [
       "Power BI executive dashboard reporting"
     ],
     image: "/src/data/images/Airbnb.jpg",
-    images: ["/src/data/images/Airbnb_1.jpg", "/src/data/images/Airbnb_2.jpg", "/src/data/images/Airbnb_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/airbnb-price-prediction"
+    images: ["/src/data/images/Airbnb.jpg",
+             "/src/data/images/Airbnb1.jpg",
+             "/src/data/images/Airbnb2.jpg"],
+    githubUrl: "https://colab.research.google.com/drive/1rYSK6fRWhapoZVAD1K-Z6WjWqR680Azq?usp=sharing"
   },
-  {
-    id: "proj-5",
-    title: "Flight Delay Prediction",
-    subtitle: "Big Data Analytics For Flight Delay Prediction",
-    category: ["Data Science & Analytics"],
-    role: "Data Scientist",
-    date: "May 2026",
-    description: [
-      "Flight Delay Prediction is a big data analytics project developed to forecast flight delays using historical aviation data. The system analyzes large-scale flight records to identify operational patterns and generate predictive insights that support more informed decision-making in the aviation industry."
-    ],
-    technologies: ["Apache Spark", "PySpark", "Python", "Scikit-learn", "Pandas"],
-    highlights: [
-      "Large-scale flight data processing",
-      "Machine learning-based delay prediction",
-      "Distributed data processing with Apache Spark"
-    ],
-    image: "/src/data/images/Flight_Delay_Prediction.jpg",
-    images: ["/src/data/images/Flight_Delay_Prediction_1.jpg", "/src/data/images/Flight_Delay_Prediction_2.jpg", "/src/data/images/Flight_Delay_Prediction_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/flight-delay-prediction"
-  },
+  // {
+  //   id: "proj-5",
+  //   title: "Flight Delay Prediction",
+  //   subtitle: "Big Data Analytics For Flight Delay Prediction",
+  //   category: ["Data Science & Analytics"],
+  //   role: "Data Scientist",
+  //   date: "May 2026",
+  //   description: [
+  //     "Flight Delay Prediction is a big data analytics project developed to forecast flight delays using historical aviation data. The system analyzes large-scale flight records to identify operational patterns and generate predictive insights that support more informed decision-making in the aviation industry."
+  //   ],
+  //   technologies: ["Apache Spark", "PySpark", "Python", "Scikit-learn", "Pandas"],
+  //   highlights: [
+  //     "Large-scale flight data processing",
+  //     "Machine learning-based delay prediction",
+  //     "Distributed data processing with Apache Spark"
+  //   ],
+  //   image: "/src/data/images/Flight_Delay_Prediction.jpg",
+  //   images: ["/src/data/images/Flight_Delay_Prediction_1.jpg", "/src/data/images/Flight_Delay_Prediction_2.jpg", "/src/data/images/Flight_Delay_Prediction_3.jpg"],
+  //   githubUrl: "https://github.com/ferizwan-malik/flight-delay-prediction"
+  // },
   {
     id: "proj-6",
     title: "Abon Murnisaji",
@@ -235,9 +236,19 @@ export const projectsData: Project[] = [
       "Full admin order & inventory management dashboard",
       "Integrated payment and order management"
     ],
-    image: "/src/data/images/Abon_Murnisaji.jpg",
-    images: ["/src/data/images/Abon_Murnisaji_1.jpg", "/src/data/images/Abon_Murnisaji_2.jpg", "/src/data/images/Abon_Murnisaji_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/abon-murnisaji"
+    image: "/src/data/images/Abon.jpg",
+    images: ["/src/data/images/Abon.jpg",
+             "/src/data/images/Abon1.jpg", 
+             "/src/data/images/Abon2.jpg", 
+             "/src/data/images/Abon3.jpg",
+             "/src/data/images/Abon4.jpg",
+             "/src/data/images/Abon5.jpg",
+             "/src/data/images/Abon6.jpg",
+             "/src/data/images/Abon7.jpg",
+             "/src/data/images/Abon8.jpg",
+             "/src/data/images/Abon9.jpg",
+             "/src/data/images/Abon10.jpg"],
+    githubUrl: "https://murnisaji.my.id/"
   },
   {
     id: "proj-7",
@@ -255,9 +266,19 @@ export const projectsData: Project[] = [
       "Real-time schedule availability",
       "Automated booking confirmation and receipts"
     ],
-    image: "/src/data/images/Puncak_Tennis_Club.jpg",
-    images: ["/src/data/images/Puncak_Tennis_Club_1.jpg", "/src/data/images/Puncak_Tennis_Club_2.jpg", "/src/data/images/Puncak_Tennis_Club_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/puncak-tennis-club"
+    image: "/src/data/images/Tennis.jpg",
+    images: ["/src/data/images/Tennis.jpg", 
+             "/src/data/images/Tennis1.jpg", 
+             "/src/data/images/Tennis2.jpg",
+             "/src/data/images/Tennis3.jpg",
+             "/src/data/images/Tennis4.jpg",
+             "/src/data/images/Tennis5.jpg",
+             "/src/data/images/Tennis6.jpg",
+             "/src/data/images/Tennis7.jpg",
+             "/src/data/images/Tennis8.jpg",
+             "/src/data/images/Tennis9.jpg",
+             "/src/data/images/Tennis10.jpg"],
+    githubUrl: "https://github.com/Ferizwan/Puncak-Tennis-Club"
   },
   {
     id: "proj-8",
@@ -275,9 +296,12 @@ export const projectsData: Project[] = [
       "Manual CLAHE implementation without external computer vision libraries",
       "Real-time browser-based image processing with Canvas API"
     ],
-    image: "/src/data/images/CCTV_Image_Enhancement.jpg",
-    images: ["/src/data/images/CCTV_Image_Enhancement_1.jpg", "/src/data/images/CCTV_Image_Enhancement_2.jpg", "/src/data/images/CCTV_Image_Enhancement_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/cctv-image-enhancement"
+    image: "/src/data/images/Clahe.png",
+    images: ["/src/data/images/Clahe.png", 
+             "/src/data/images/Clahe1.png", 
+             "/src/data/images/Clahe2.png",
+             "/src/data/images/Clahe3.png",],
+    githubUrl: "https://clahe-image-enhacer.vercel.app/"
   },
   {
     id: "proj-9",
@@ -295,9 +319,30 @@ export const projectsData: Project[] = [
       "Shopping cart and order management",
       "Optimized purchasing workflow"
     ],
-    image: "/src/data/images/Nasi_Kebuli_Mutiara.jpg",
-    images: ["/src/data/images/Nasi_Kebuli_Mutiara_1.jpg", "/src/data/images/Nasi_Kebuli_Mutiara_2.jpg", "/src/data/images/Nasi_Kebuli_Mutiara_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/nasi-kebuli-mutiara"
+    image: "/src/data/images/Kebuli.jpg",
+    images: ["/src/data/images/Kebuli.jpg", 
+             "/src/data/images/Kebuli1.jpg", 
+             "/src/data/images/Kebuli2.jpg",
+             "/src/data/images/Kebuli3.jpg",
+             "/src/data/images/Kebuli4.jpg",
+             "/src/data/images/Kebuli5.jpg",
+             "/src/data/images/Kebuli6.jpg",
+             "/src/data/images/Kebuli7.jpg",
+             "/src/data/images/Kebuli8.jpg",
+             "/src/data/images/Kebuli9.jpg",
+             "/src/data/images/Kebuli10.jpg",
+             "/src/data/images/Kebuli11.jpg",
+             "/src/data/images/Kebuli12.jpg",
+             "/src/data/images/Kebuli13.jpg",
+             "/src/data/images/Kebuli14.jpg",
+             "/src/data/images/Kebuli15.jpg",
+             "/src/data/images/Kebuli16.jpg",
+             "/src/data/images/Kebuli17.jpg",
+             "/src/data/images/Kebuli18.jpg",
+             "/src/data/images/Kebuli19.jpg",
+             "/src/data/images/Kebuli20.jpg",
+             "/src/data/images/Kebuli21.jpg"],
+    githubUrl: "https://github.com/pandaonicinta/frontend-nasiKebuliMutiara"
   },
   {
     id: "proj-10",
@@ -316,8 +361,13 @@ export const projectsData: Project[] = [
       "Educational content management"
     ],
     image: "/src/data/images/Bettabeal.jpg",
-    images: ["/src/data/images/Bettabeal_1.jpg", "/src/data/images/Bettabeal_2.jpg", "/src/data/images/Bettabeal_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/bettabeal"
+    images: ["/src/data/images/Bettabeal1.jpg", 
+             "/src/data/images/Bettabeal2.jpg", 
+             "/src/data/images/Bettabeal3.jpg",
+             "/src/data/images/Bettabeal4.jpg",
+             "/src/data/images/Bettabeal5.jpg",
+             "/src/data/images/Bettabeal6.jpg"],
+    githubUrl: "https://bettabeal.vercel.app/"
   },
   {
     id: "proj-11",
@@ -333,9 +383,15 @@ export const projectsData: Project[] = [
       "Responsive multi-device experience",
       "Website performance optimization"
     ],
-    image: "/src/data/images/Sate_Umami.jpg",
-    images: ["/src/data/images/Sate_Umami_1.jpg", "/src/data/images/Sate_Umami_2.jpg", "/src/data/images/Sate_Umami_3.jpg"],
-    githubUrl: "https://github.com/ferizwan-malik/sate-umami"
+    image: "/src/data/images/Sate.jpg",
+    images: ["/src/data/images/Sate.jpg", 
+             "/src/data/images/Sate1.jpg", 
+             "/src/data/images/Sate2.jpg",
+             "/src/data/images/Sate3.jpg",
+             "/src/data/images/Sate4.jpg",
+             "/src/data/images/Sate5.jpg",
+             "/src/data/images/Sate6.jpg"],
+    githubUrl: "https://github.com/Ferizwan/Sate-Umami"
   }
 ];
 

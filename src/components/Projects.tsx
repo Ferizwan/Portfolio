@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react'; // 1. Tambahkan useRef di sini
 import { motion, AnimatePresence } from 'motion/react';
 import { FolderGit2, ArrowUpRight, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import { projectsData } from '../data/portfolioData';
@@ -11,6 +11,7 @@ interface ProjectsProps {
 export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
   const [activeCategory, setActiveCategory] = useState<string>('All');
   const [visibleCount, setVisibleCount] = useState<number>(3);
+  const projectsSectionRef = useRef<HTMLDivElement>(null);
 
   const categories = ['All', 'Web Platforms', 'Mobile Applications', 'AI & ML', 'Data Science & Analytics'];
 
@@ -23,7 +24,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
 
   const handleCategoryChange = (cat: string) => {
     setActiveCategory(cat);
-    setVisibleCount(3); // Reset to initial 2 projects when changing category
+    setVisibleCount(3);
   };
 
   const handleToggleLoadMore = () => {
@@ -31,11 +32,18 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
       setVisibleCount(filteredProjects.length);
     } else {
       setVisibleCount(3);
+
+      setTimeout(() => {
+        projectsSectionRef.current?.scrollIntoView({
+          behavior: 'smooth', 
+          block: 'start',   
+        });
+      }, 50);
     }
   };
 
   return (
-    <section id="projects" className="pt-0 pb-0 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative">
+    <section id="projects" className="pt-0 pb-0 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto relative scroll-mt-24 py-12" ref={projectsSectionRef}>
       {/* Section Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
         <div className="flex flex-col items-start gap-2">
@@ -54,7 +62,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
             <button
               key={cat}
               onClick={() => handleCategoryChange(cat)}
-              className={`px-3.5 py-1.5 text-xs font-mono rounded-xl transition-all duration-200 cursor-pointer ${
+              className={`px-3.5 py-1.5 text-xs font-mono rounded-xl transition-all duration-500 cursor-pointer ${
                 activeCategory === cat
                   ? 'bg-[#00C8FF] text-black font-bold shadow-md'
                   : 'text-zinc-400 light:text-slate-600 hover:text-white light:hover:text-slate-900'
@@ -66,7 +74,7 @@ export const Projects: React.FC<ProjectsProps> = ({ onSelectProject }) => {
         </div>
       </div>
 
-      {/* 2-Column Interactive Grid */}
+      {/* 3-Column Interactive Grid */}
       <motion.div layout className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <AnimatePresence>
           {displayedProjects.map((project, idx) => (
