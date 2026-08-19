@@ -27,9 +27,9 @@ export const About: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="lg:col-span-7 space-y-6"
         >
-          <div className="bg-[#121214] light:bg-white border border-[#27272A] light:border-slate-200 rounded-3xl p-6 sm:p-8 relative overflow-hidden shadow-xl">
+          <div className="bg-[#121214] light:bg-white border border-[#27272A] light:border-slate-200 rounded-3xl p-6 sm:p-8 relative overflow-hidden shadow-xl transition-all duration-300 hover:border-[#00C8FF]/50 hover:shadow-[0_0_25px_rgba(0,200,255,0.15)]">
             {/* Ambient Corner Accent */}
-            <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#00C8FF]/10 rounded-full blur-xl pointer-events-none" />
+            <div className="absolute -top-12 -right-12 w-32 h-32 bg-[#00C8FF]/10 rounded-full blur-xl pointer-events-none " />
 
             <div className="flex items-center gap-3 mb-2">
               <div>

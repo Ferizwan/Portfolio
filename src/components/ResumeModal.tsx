@@ -46,7 +46,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
             <div className="flex items-center gap-2">
               <a
-                href="/src/data/resume.pdf"
+                href="/resume.pdf"
                 download="CV_Ferizwan Malik Wichaksana.pdf"
                 className="px-3.5 py-1.5 rounded-xl bg-[#00C8FF] text-black font-bold text-xs flex items-center gap-1.5 hover:bg-[#00B0E0] transition-colors cursor-pointer no-underline"
               >
