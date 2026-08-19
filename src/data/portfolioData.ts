@@ -110,7 +110,7 @@ export const experienceData: Experience[] = [
 export const projectsData: Project[] = [
   {
     id: "proj-1",
-    title: "SACAR",
+    title: "SACAR (Smart Agriculture Augmented Reality)",
     subtitle: "Smart Agriculture Augmented Reality APP for Smart Farming",
     category: ["Mobile Applications"],
     role: "AR Developer & UI/UX Designer",
