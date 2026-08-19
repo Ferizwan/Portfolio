@@ -69,7 +69,7 @@ Some of the featured projects included in this portfolio:
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/Ferizwan/Portfolio.git
 cd ferizwan-malik-wichaksana-portfolio
 npm install
 ```

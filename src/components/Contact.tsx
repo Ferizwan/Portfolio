@@ -123,7 +123,7 @@ export const Contact: React.FC = () => {
                     <input
                       type="text"
                       required
-                      placeholder="e.g. Alex Morgan"
+                      placeholder="e.g. Ferizwan Malik Wichaksana"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#00C8FF] transition-colors"
@@ -137,7 +137,7 @@ export const Contact: React.FC = () => {
                     <input
                       type="email"
                       required
-                      placeholder="alex@company.com"
+                      placeholder="ferizmalik12@.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl bg-zinc-900 border border-zinc-800 text-sm text-white placeholder:text-zinc-600 focus:outline-none focus:border-[#00C8FF] transition-colors"

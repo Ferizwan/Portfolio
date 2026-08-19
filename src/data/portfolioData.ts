@@ -361,12 +361,17 @@ export const projectsData: Project[] = [
       "Educational content management"
     ],
     image: "/src/data/images/Bettabeal.jpg",
-    images: ["/src/data/images/Bettabeal1.jpg", 
+    images: ["/src/data/images/Bettabeal.jpg",
+             "/src/data/images/Bettabeal1.jpg", 
              "/src/data/images/Bettabeal2.jpg", 
              "/src/data/images/Bettabeal3.jpg",
              "/src/data/images/Bettabeal4.jpg",
              "/src/data/images/Bettabeal5.jpg",
-             "/src/data/images/Bettabeal6.jpg"],
+             "/src/data/images/Bettabeal6.jpg",
+             "/src/data/images/Bettabeal7.jpg",
+             "/src/data/images/Bettabeal8.jpg",
+             "/src/data/images/Bettabeal9.jpg",
+             "/src/data/images/Bettabeal10.jpg"],
     githubUrl: "https://bettabeal.vercel.app/"
   },
   {
