@@ -61,7 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
             {/* <div className="relative w-full h-full rounded-3xl overflow-hidden border border-[#27272A] light:border-slate-300 bg-gradient-to-b from-zinc-900 to-[#0A0A0B] light:from-slate-100 light:to-white shadow-2xl group transition-all duration-500 hover:border-[#00C8FF]/60 hover:shadow-[0_0_30px_rgba(0,200,255,0.25)]"> */}
               {/* USER PHOTO: Ganti URL src di bawah ini dengan URL foto Anda atau file foto lokal Anda */}
               <img
-                src="src/data/images/FotoAlmamater.png"
+                src="/images/FotoAlmamater.png"
                 alt="Ferizwan Malik"
               />
               {/* Overlay Badge */}
