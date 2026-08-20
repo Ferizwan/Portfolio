@@ -405,54 +405,54 @@ export const skillCategories: SkillCategory[] = [
     id: "prog",
     name: "Programming Languages",
     skills: [
-      { name: "JavaScript", level: 90, icon: "Code" },
-      { name: "PHP", level: 85, icon: "Server" },
-      { name: "Python", level: 88, icon: "Terminal" },
-      { name: "R", level: 80, icon: "BarChart2" },
-      { name: "SQL", level: 85, icon: "Database" }
+      { name: "JavaScript", level: 90, icon: "/images/skill/javascript.png" },
+      { name: "PHP", level: 85, icon: "/images/skill/php.png" },
+      { name: "Python", level: 88, icon: "/images/skill/python.png" },
+      { name: "R", level: 80, icon: "/images/skill/r.png" },
+      { name: "SQL", level: 85, icon: "/images/skill/sql.png" }
     ]
   },
   {
     id: "frameworks",
     name: "Frameworks & Libraries",
     skills: [
-      { name: "React.js", level: 92, icon: "Layers" },
-      { name: "Next.js", level: 88, icon: "Globe" },
-      { name: "Laravel", level: 86, icon: "Box" },
-      { name: "Tailwind CSS", level: 95, icon: "Palette" },
-      { name: "Bootstrap", level: 82, icon: "Layout" }
+      { name: "React.js", level: 92, icon: "/images/skill/react.png" },
+      { name: "Next.js", level: 88, icon: "/images/skill/next.png" },
+      { name: "Laravel", level: 86, icon: "/images/skill/laravel.png" },
+      { name: "Tailwind CSS", level: 95, icon: "/images/skill/tailwind.png" },
+      { name: "Bootstrap", level: 82, icon: "/images/skill/bootstrap.png" }
     ]
   },
   {
     id: "databases",
     name: "Databases & Storage",
     skills: [
-      { name: "MySQL", level: 88, icon: "Database" },
-      { name: "MongoDB", level: 80, icon: "HardDrive" }
+      { name: "MySQL", level: 88, icon: "/images/skill/mysql.png" },
+      { name: "MongoDB", level: 80, icon: "/images/skill/mongodb.png" }
     ]
   },
   {
     id: "tools",
     name: "Developer & AI Tools",
     skills: [
-      { name: "Git & GitHub", level: 90, icon: "GitBranch" },
-      { name: "VS Code", level: 95, icon: "Code2" },
-      { name: "Android Studio", level: 80, icon: "Smartphone" },
-      { name: "Figma", level: 92, icon: "Figma" },
-      { name: "Google Colab", level: 88, icon: "Cpu" },
-      { name: "RStudio", level: 82, icon: "Activity" },
-      { name: "Postman", level: 85, icon: "Send" },
-      { name: "QGIS", level: 75, icon: "MapPin" }
+      { name: "Git & GitHub", level: 90, icon: "/images/skill/github.png" },
+      { name: "VS Code", level: 95, icon: "/images/skill/vscode.png" },
+      { name: "Android Studio", level: 80, icon: "/images/skill/android.png" },
+      { name: "Figma", level: 92, icon: "/images/skill/figma.png" },
+      { name: "Google Colab", level: 88, icon: "/images/skill/colab.png" },
+      { name: "RStudio", level: 82, icon: "/images/skill/rstudio.png" },
+      { name: "Postman", level: 85, icon: "/images/skill/postman.png" },
+      { name: "QGIS", level: 75, icon: "/images/skill/qgis.png" }
     ]
   },
   {
     id: "design",
     name: "Design & Media Production",
     skills: [
-      { name: "Adobe Premiere Pro", level: 85, icon: "Video" },
-      { name: "Adobe After Effects", level: 82, icon: "Film" },
-      { name: "Adobe Illustrator", level: 80, icon: "PenTool" },
-      { name: "Power BI", level: 88, icon: "PieChart" }
+      { name: "Adobe Premiere Pro", level: 85, icon: "/images/skill/pr.png" },
+      { name: "Adobe After Effects", level: 82, icon: "/images/skill/ae.png" },
+      { name: "Adobe Illustrator", level: 80, icon: "/images/skill/ai.png" },
+      { name: "Power BI", level: 88, icon: "/images/skill/powerbi.png" }
     ]
   }
 ];

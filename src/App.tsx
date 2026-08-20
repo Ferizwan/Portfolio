@@ -139,6 +139,15 @@ export default function App() {
             >
             </motion.div>
 
+            {/* <motion.div
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, margin: '-50px' }}
+              transition={{ duration: 0.6 }}
+            >
+              <Publications />
+            </motion.div> */}
+
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

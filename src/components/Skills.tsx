@@ -24,40 +24,52 @@ import {
   PenTool,
   PieChart,
   BarChart2,
-  Code2
+  Code2,
+  type LucideIcon
 } from 'lucide-react';
 import { skillCategories } from '../data/portfolioData';
 
 // Helper icon mapper for skill logos
-const getSkillIcon = (name: string) => {
-  const iconMap: Record<string, React.ReactNode> = {
-    'JavaScript': <Code2 className="w-5 h-5 text-amber-400" />,
-    'PHP': <Server className="w-5 h-5 text-indigo-400" />,
-    'Python': <Terminal className="w-5 h-5 text-emerald-400" />,
-    'R': <BarChart2 className="w-5 h-5 text-sky-400" />,
-    'SQL': <Database className="w-5 h-5 text-[#00C8FF]" />,
-    'React.js': <Layers className="w-5 h-5 text-sky-400" />,
-    'Next.js': <Globe className="w-5 h-5 text-zinc-100 light:text-slate-900" />,
-    'Laravel': <Box className="w-5 h-5 text-red-400" />,
-    'Tailwind CSS': <Palette className="w-5 h-5 text-teal-400" />,
-    'Bootstrap': <Layout className="w-5 h-5 text-purple-400" />,
-    'MySQL': <Database className="w-5 h-5 text-blue-400" />,
-    'MongoDB': <HardDrive className="w-5 h-5 text-emerald-500" />,
-    'Git & GitHub': <GitBranch className="w-5 h-5 text-orange-400" />,
-    'VS Code': <Code className="w-5 h-5 text-blue-500" />,
-    'Android Studio': <Smartphone className="w-5 h-5 text-green-400" />,
-    'Figma': <FigmaIcon className="w-5 h-5 text-pink-400" />,
-    'Google Colab': <Cpu className="w-5 h-5 text-amber-500" />,
-    'RStudio': <Activity className="w-5 h-5 text-blue-400" />,
-    'Postman': <Send className="w-5 h-5 text-orange-500" />,
-    'QGIS': <MapPin className="w-5 h-5 text-emerald-400" />,
-    'Adobe Premiere Pro': <Video className="w-5 h-5 text-purple-500" />,
-    'Adobe After Effects': <Film className="w-5 h-5 text-indigo-500" />,
-    'Adobe Illustrator': <PenTool className="w-5 h-5 text-amber-600" />,
-    'Power BI': <PieChart className="w-5 h-5 text-yellow-400" />,
-  };
+const iconMap: Record<string, LucideIcon> = {
+  Code2,
+  Code,
+  Server,
+  Terminal,
+  BarChart2,
+  Database,
+  Layers,
+  Globe,
+  Box,
+  Palette,
+  Layout,
+  HardDrive,
+  GitBranch,
+  Smartphone,
+  Figma: FigmaIcon,
+  Cpu,
+  Activity,
+  Send,
+  MapPin,
+  Video,
+  Film,
+  PenTool,
+  PieChart
+};
 
-  return iconMap[name] || <Code className="w-5 h-5 text-[#00C8FF]" />;
+const getSkillIcon = (skillName: string, iconName?: string) => {
+  if (iconName?.startsWith('/')) {
+    return (
+      <img
+        src={iconName}
+        alt={skillName}
+        className="w-5 h-5 object-contain"
+      />
+    );
+  }
+
+  const Icon = (iconName && iconMap[iconName]) || iconMap[skillName] || Code;
+
+  return <Icon className="w-5 h-5 text-[#00C8FF]" />;
 };
 
 export const Skills: React.FC = () => {
@@ -110,7 +122,7 @@ export const Skills: React.FC = () => {
                     className="flex items-center gap-3 p-3 rounded-2xl bg-zinc-900/80 light:bg-slate-50 border border-zinc-800/80 light:border-slate-200/90 hover:border-[#00C8FF]/70 light:hover:border-sky-400 hover:bg-[#00C8FF]/10 light:hover:bg-sky-50 hover:shadow-[0_0_18px_rgba(0,200,255,0.2)] transition-all cursor-pointer group/card"
                   >
                     <div className="w-9 h-9 rounded-xl bg-black/40 light:bg-white border border-zinc-800 light:border-slate-200 flex items-center justify-center shrink-0 group-hover/card:scale-110 transition-transform shadow-inner">
-                      {getSkillIcon(skill.name)}
+                      {getSkillIcon(skill.name, skill.icon)}
                     </div>
                     <span className="text-xs font-semibold text-zinc-200 light:text-slate-800 group-hover/card:text-white light:group-hover/card:text-slate-900 truncate">
                       {skill.name}
