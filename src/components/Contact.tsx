@@ -45,7 +45,6 @@ export const Contact: React.FC = () => {
               <Sparkles className="w-3.5 h-3.5" />
               <span>START A CONVERSATION</span>
             </div>
-
             <h2 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black tracking-tight leading-none text-black">
               HAVE A PROJECT IN MIND? LET'S BUILD SOMETHING TOGETHER.
             </h2>
